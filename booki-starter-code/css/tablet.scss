@@ -1,0 +1,38 @@
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+
+
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+
+  .hebergements {
+    width: 100%;
+  }
+
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      width: 30%;
+    }
+
+    .card-title {
+      font-size: 14px;
+    }
+
+    .card-subtitle {
+      font-size: 13px;
+    }
+  }
+}
