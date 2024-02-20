@@ -11,10 +11,13 @@
     &:hover,
     &:focus,
     &:active {
+      border-top: none;
       border-bottom: solid 3px var(--main-color);
+      padding-top: 0;
       padding-bottom: 10px;
 
-      color: var(--main-color);
+
+      //color: var(--main-color);
     }
   }
 
@@ -28,7 +31,9 @@
       }
     }
   }
-
+.filter-bar{
+  align-items: inherit;
+}
   .filter {
     align-items: flex-start;
 
