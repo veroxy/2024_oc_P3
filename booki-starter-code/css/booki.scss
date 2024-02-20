@@ -27,11 +27,20 @@ a {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
   margin: 0;
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
 
 figure {
@@ -46,7 +55,6 @@ footer {
 }
 
 /*** class **/
-
 .fa-solid {
   color: var(--main-color);
 }
@@ -56,6 +64,12 @@ footer {
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
 .section-title {
@@ -71,24 +85,112 @@ footer {
   color: var(--main-bg-color);
 }
 
+.card {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
-/****** components ***********/
+  img {
+    object-fit: cover;
+    border: 5px solid #fff;
+  }
 
-.nav-link {
-  gap: 68PX;
-  padding: 10px;
-  padding-top: 13px;
+  .card-content {
+    padding: 0 15px;
 
-  &:hover,
-  &:focus,
-  &:active {
-    border-top: solid 3px var(--main-color);
-    padding-top: 10px;
-    color: var(--main-color);
+    > * {
+      padding-bottom: 8px;
+    }
+  }
+
+  .card-title {
+    font-size: 16px;
+    line-height: 1.2em;
   }
 }
 
+/****** components ***********/
+/****** header navigation menu ***********/
+#main-nav {
+  * {
+    display: flex;
+  }
+}
+
+.menu {
+  justify-content: space-between;
+
+  ul {
+    min-width: 20%;
+    justify-content: space-around;
+  }
+}
+
+#logo {
+  height: 79px;
+  padding: 30px 0;
+}
+
+/****** Info - filter - search bar ***********/
+.filter {
+  margin-left: 5px;
+  display: flex;
+
+  .filter-pill {
+    display: flex;
+    padding: 15px 15px;
+    border: solid 2px var(--lighter-color);
+    border-radius: 25px;
+    height: 50px;
+    gap: 5px;
+    font-weight: 700;
+    font-size: 17px;
+
+    &:hover {
+      background-color: var(--filter-bg-color);
+    }
+  }
+
+  i {
+    margin-right: 4px;
+  }
+}
+
+#info-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  padding: 35px 0;
+}
+
+.info-bar {
+  p {
+    display: flex;
+    align-items: center;
+  }
+
+  i {
+    border: solid 1px var(--lighter-color);
+    height: 24px;
+    width: 24px;
+    padding: 4px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 4px;
+  }
+}
+
+.filter-bar,
+.filters-container {
+  display: flex;
+}
+
+.filter-bar {
+}
+
 .search-bar {
+  width: 377px;
+
   form {
     display: flex;
     border: 1px solid #F2F2F2;
@@ -132,6 +234,7 @@ footer {
     border-radius: 0 10px 10px 0;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
+    width: 123px;
 
     &:hover {
       background-color: var(--main-bg-color);
@@ -139,93 +242,15 @@ footer {
   }
 }
 
-
-.filter {
-  margin-left: 5px;
-  display: flex;
-
-  .filter-pill {
-    display: flex;
-    padding: 15px 15px;
-    border: solid 2px var(--lighter-color);
-    border-radius: 25px;
-    height: 50px;
-    gap: 5px;
-    font-weight: 700;
-
-    font-size: 17px;
-
-    &:hover {
-      background-color: var(--filter-bg-color);
-    }
-  }
-
-  i {
-    margin-right: 4px;
-  }
-}
-
-.info-bar {
-  i {
-    border: solid 1px var(--lighter-color);
-    height: 24px;
-    width: 24px;
-    padding: 4px;
-    border-radius: 50%;
-    text-align: center;
-    margin-right: 4px;
-  }
-}
-
-.card {
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
-  img {
-    object-fit: cover;
-  }
-
-  .card-content {
-    padding: 0 15px;
-  }
-
-  .card-title {
-    font-size: 16px;
-  }
-}
-
-
-/****** header navigation menu ***********/
-#main-nav {
-  * {
-    display: flex;
-  }
-}
-
-.menu {
-  justify-content: space-between;
-
-  ul {
-    min-width: 20%;
-    justify-content: space-around;
-  }
-}
-
-#logo {
-  height: 79px;
+/****** Hebergements And Populaires  And Activites***********/
+//.populaires-cards,
+.activites-cards,
+.hebergements-cards {
+  column-gap: calc(7% / 3);
+  row-gap: 30px;
   padding: 30px 0;
 }
 
-/****** Info - filter - search bar ***********/
-.filter-bar,
-.filters-container {
-  display: flex;
-}
-
-
-/****** Hebergements And Populaires ***********/
 figure {
   img {
     width: 100%;
@@ -243,10 +268,7 @@ figure {
     box-sizing: border-box;
   }
 
-  img {
-    border-radius: 20px 20px 0 0;
 
-  }
 }
 
 /****** Hebergements ***********/
@@ -265,7 +287,16 @@ figure {
 
   a {
     display: flex;
-    width: 30%;
+    //width: 30%;
+  width: calc(100%/3);
+  }
+
+  img {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .card {
+    padding-bottom: 15px;
   }
 }
 
@@ -292,7 +323,13 @@ figure {
 
   img {
     border-radius: 20px 20px 0 0;
-    //width: 100%;
+    border: none;
+    height: 380px;
+
+  }
+
+  .card-content {
+    padding: 15px 19px;
   }
 }
 
@@ -338,9 +375,6 @@ figure {
     margin: 0;
   }
 
-  .card-rating {
-    margin-bottom: 5px;
-  }
 }
 
 footer {
@@ -349,6 +383,8 @@ footer {
 
   nav {
     display: flex;
+    row-gap: 15px;
+
     > div {
       width: 33%;
     }

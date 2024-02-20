@@ -1,8 +1,6 @@
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
 
 
   .hebergements-and-populaires {
@@ -19,14 +17,6 @@
   }
 
   .populaires-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    a {
-      width: 30%;
-    }
-
     .card-title {
       font-size: 14px;
     }
@@ -35,4 +25,11 @@
       font-size: 13px;
     }
   }
+
+  .activites-cards {
+    img {
+      height: 200px;
+    }
+  }
 }
+
