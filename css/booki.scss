@@ -245,12 +245,14 @@ main {
     font-size: 17px;
     //border: 1px solid #F2F2F2;
     border: none;
-    width: 20%;
     border-radius: 0 10px 10px 0;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
-    width: 123px;
 
+    &:after{
+      content: "rechercher...";
+      display: flex;
+    }
     &:hover {
       background-color: var(--main-bg-color);
     }
