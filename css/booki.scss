@@ -72,9 +72,20 @@ main {
   row-gap: 30px;
 }
 
-.section-title {
-  margin: 0;
+h2 {
   font-size: 22px;
+
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .euro {
@@ -203,6 +214,7 @@ main {
   align-items: center;
 }
 
+
 .search-bar {
   width: 377px;
 
@@ -249,10 +261,11 @@ main {
     border-left: none; /* Prevent double borders */
     cursor: pointer;
 
-    &:after{
+    &:after {
       content: "rechercher...";
       display: flex;
     }
+
     &:hover {
       background-color: var(--main-bg-color);
     }
@@ -261,12 +274,12 @@ main {
 
 /****** Hebergements And Populaires  And Activites***********/
 //.populaires-cards,
-.activites-cards,
+/*.activites-cards,
 .hebergements-cards {
   column-gap: calc(7% / 3);
   row-gap: 30px;
   padding: 30px 0;
-}
+}*/
 
 figure {
   img {
@@ -297,12 +310,15 @@ figure {
 .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   padding: 30px 0;
   justify-content: space-between;
+
   &:after {
     content: "";
     flex: auto;
   }
+
   a {
     display: flex;
     width: 30%;
