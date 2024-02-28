@@ -97,6 +97,10 @@ h3 {
 }
 
 .card {
+  .illustration{
+    height: 124px;
+    overflow: hidden;
+  }
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -307,13 +311,26 @@ figure {
   width: 65%;
 }
 
+.activites-cards,
+.populaires-cards,
+.hebergements-cards {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+
+}
+/*
+.populaires-cards,
 .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding: 30px 0;
   justify-content: space-between;
-
+}*/
+.hebergements-cards {
   &:after {
     content: "";
     flex: auto;
@@ -330,6 +347,7 @@ figure {
 
   .card {
     padding-bottom: 15px;
+    width: 100%;
   }
 }
 
@@ -378,9 +396,9 @@ figure {
 }
 
 .populaires-cards {
+  flex-direction: column;
   .card {
     display: flex;
-    margin-top: 33px;
   }
 
   img {
@@ -413,7 +431,12 @@ figure {
 footer {
   background-color: var(--main-bg-color);
   padding: 30px;
-
+ul{
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
   nav {
     display: flex;
     row-gap: 15px;

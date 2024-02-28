@@ -81,6 +81,9 @@ h3 {
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); }
+  .card .illustration {
+    height: 124px;
+    overflow: hidden; }
   .card img {
     object-fit: cover;
     border: 5px solid #fff; }
@@ -222,22 +225,35 @@ figure img {
 .hebergements {
   width: 65%; }
 
+.activites-cards,
+.populaires-cards,
+.hebergements-cards {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px; }
+
+/*
+.populaires-cards,
 .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding: 30px 0;
-  justify-content: space-between; }
-  .hebergements-cards:after {
-    content: "";
-    flex: auto; }
-  .hebergements-cards a {
-    display: flex;
-    width: 30%; }
-  .hebergements-cards img {
-    border-radius: 20px 20px 0 0; }
-  .hebergements-cards .card {
-    padding-bottom: 15px; }
+  justify-content: space-between;
+}*/
+.hebergements-cards:after {
+  content: "";
+  flex: auto; }
+.hebergements-cards a {
+  display: flex;
+  width: 30%; }
+.hebergements-cards img {
+  border-radius: 20px 20px 0 0; }
+.hebergements-cards .card {
+  padding-bottom: 15px;
+  width: 100%; }
 
 /****** Activites ***********/
 .activites {
@@ -270,30 +286,36 @@ figure img {
   justify-content: space-between;
   align-items: center; }
 
-.populaires-cards .card {
-  display: flex;
-  margin-top: 33px; }
-.populaires-cards img {
-  width: 33%;
-  height: 136px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px; }
-.populaires-cards .card-content {
-  width: 67%;
-  padding-left: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box; }
-.populaires-cards .card-title {
-  margin-top: 10px;
-  margin-bottom: 4px; }
-.populaires-cards .card-subtitle {
-  margin: 0; }
+.populaires-cards {
+  flex-direction: column; }
+  .populaires-cards .card {
+    display: flex; }
+  .populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; }
+  .populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; }
+  .populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px; }
+  .populaires-cards .card-subtitle {
+    margin: 0; }
 
 footer {
   background-color: var(--main-bg-color);
   padding: 30px; }
+  footer ul {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
   footer nav {
     display: flex;
     row-gap: 15px; }
@@ -314,15 +336,19 @@ footer {
     width: 100%;
     margin-top: 50px; }
 
-  .populaires-cards .card-title {
-    font-size: 14px; }
-  .populaires-cards .card-subtitle {
-    font-size: 13px; }
+  .populaires-cards {
+    flex-direction: row; }
+    .populaires-cards a {
+      width: 275px; }
+    .populaires-cards .card-title {
+      font-size: 14px; }
+    .populaires-cards .card-subtitle {
+      font-size: 13px; }
 
   .activites-cards img {
     height: 200px; } }
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media only screen and (max-width: 767.98px) {
   /****** components ***********/
   .nav-link {
     gap: 68PX;
@@ -363,7 +389,6 @@ footer {
   .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); }
     .card img {
       object-fit: cover; }
@@ -399,17 +424,27 @@ footer {
   .activites-cards a,
   .populaires-cards a,
   .hebergements-cards a {
-    width: 100%; }
+    width: 46%; }
+
+  .hebergements-cards .card {
+    padding: 0; }
+
+  .populaires-cards a {
+    width: 335px; }
 
   .activites-cards {
-    flex-direction: column;
     row-gap: 30px; }
     .activites-cards a {
       justify-content: center; }
     .activites-cards img {
       height: 141px; }
 
-  footer nav {
-    flex-direction: column; } }
+  footer {
+    width: 294px;
+    margin: 0 auto; }
+    footer nav {
+      flex-direction: column; }
+      footer nav > div {
+        width: 100%; } }
 
 /*# sourceMappingURL=booki.css.map */

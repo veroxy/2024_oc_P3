@@ -1,5 +1,6 @@
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
 
 
@@ -17,6 +18,11 @@
   }
 
   .populaires-cards {
+    flex-direction: row;
+    a {
+      width: 275px;
+    }
+
     .card-title {
       font-size: 14px;
     }

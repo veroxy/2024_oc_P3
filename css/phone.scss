@@ -1,5 +1,5 @@
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media only screen and (max-width: 767.98px) {
 
 
   /****** components ***********/
@@ -64,7 +64,7 @@
   .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    //padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
     img {
@@ -95,15 +95,18 @@
       gap: 15px;
 
     }
+
     ul {
       display: flex;
       //flex-direction: row;
       gap: 15px;
+
       li {
         border-top: inherit;
         width: 50%;
         justify-content: center;
         font-size: 16px;
+
         &:hover {
           border-top: inherit;
 
@@ -120,13 +123,28 @@
   .populaires-cards,
   .hebergements-cards {
     a {
-      width: 100%;
+      width: 46%;
+    }
+  }
+  .hebergements-cards {
+    .card {
+      padding: 0;
+
+      img {
+        //height: ;
+      }
     }
   }
 
+  .populaires-cards {
+    a {
+      width: 335px;
+    }
+  }
   .activites-cards {
-    flex-direction: column;
+    //flex-direction: column;
     row-gap: 30px;
+
     a {
       justify-content: center;
     }
@@ -137,9 +155,14 @@
   }
 
   footer {
+    width: 294px;
+    margin: 0 auto;
     nav {
       flex-direction: column;
 
+      > div {
+        width: 100%
+      }
     }
   }
 }
