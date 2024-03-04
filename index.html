@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-          referrerpolicy="no-referrer" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+          referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,8 +27,9 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="info-group" class="col-12">
+        <section id="info-group">
             <div class="info-title">
                 <h2 class="title">Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
@@ -66,11 +67,11 @@
                 </p>
             </div>
         </section>
-        <div id="hebergements-and-populaires" class="col-12">
-            <section class="hebergements col-8" id="hebergements">
-                <!--                <div class="populaires-title">-->
-                <h2 class="title">Hébergements à Marseille</h2>
-                <!--                </div>-->
+        <div class="hebergements-and-populaires">
+
+            <section class="hebergements" id="hebergements">
+                <h2 class="section-title ">Hébergements </h2>
+
                 <div class="hebergements-cards">
                     <a href="#">
                         <figure class="card">
@@ -208,21 +209,21 @@
                 </div>
                 <div class="title"><a href="#"><strong>Afficher plus</strong></a></div>
             </section>
-            <section class="populaires col-4">
-                <!--                <div class="populaires-title">-->
-                <h2 class="title">Les plus populaires <i aria-hidden="true" class="fa-solid fa-chart-line"></i>
-                </h2>
 
-                <!--                </div>-->
+            <section class="populaires">
+                <h2 class="section-title populaires-title">
+                    Les plus populaires
+                    <i aria-hidden="true" class="fa-solid fa-chart-line"></i>
+                </h2>
                 <div class="populaires-cards">
                     <a href="#">
-                        <article class="card">
+                        <figure class="card">
                             <img alt="Image de la chambre d'hôtel montrant un lit"
-                                 src="images/hebergements/emile-guillemot.jpg">
-                            <div class="card-content">
+                                 src="./images/hebergements/emile-guillemot.jpg">
+                            <figcaption class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                    <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
+                                    <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                                 </div>
                                 <div class="card-rating">
                                     <i aria-hidden="true" class="fa-xs fa-solid fa-star"></i>
@@ -232,14 +233,14 @@
                                     <i aria-hidden="true" class="fa-xs fa-solid fa-star neutral-star"></i>
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
-                            </div>
-                        </article>
+                            </figcaption>
+                        </figure>
                     </a>
                     <a href="#">
-                        <article class="card">
+                        <figure class="card">
                             <img alt="Image de la chambre d'hôtel montrant un lit"
-                                 src="images/hebergements/aw-creative.jpg">
-                            <div class="card-content">
+                                 src="./images/hebergements/aw-creative.jpg">
+                            <figcaption class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
                                     <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
@@ -252,14 +253,14 @@
                                     <i aria-hidden="true" class="fa-xs fa-solid fa-star neutral-star"></i>
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
-                            </div>
-                        </article>
+                            </figcaption>
+                        </figure>
                     </a>
                     <a href="#">
-                        <article class="card">
+                        <figure class="card">
                             <img alt="Image de la chambre d'hôtel montrant un lit"
-                                 src="images/hebergements/febrian-zakaria2.jpg">
-                            <div class="card-content">
+                                 src="./images/hebergements/febrian-zakaria2.jpg">
+                            <figcaption class="card-content">
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel Bleu et Blanc</h3>
                                     <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
@@ -272,66 +273,67 @@
                                     <i aria-hidden="true" class="fa-xs fa-solid fa-star neutral-star"></i>
                                     <span class="sr-only">Note de 4 sur 5</span>
                                 </div>
-                            </div>
-                        </article>
+                            </figcaption>
+                        </figure>
                     </a>
                 </div>
             </section>
         </div>
-        <section class="activites col-12" id="activites">
-            <div class="activites-title">
-                <h2 class="title">Activités à Marseille</h2>
-                <!--                    <i aria-hidden="true" class="fa-solid fa-chart-line"></i>-->
-            </div>
-            <div class="activites-cards">
-                <a href="#">
-                    <figure class="card">
-                        <img alt="Image de la chambre d'hôtel montrant un lit"
-                             src="images/activites/reno-laithienne.jpg">
-                        <figcaption class="card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">Vieux port</h3>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="card">
-                        <img alt="Image de la chambre d'hôtel montrant un lit"
-                             src="images/activites/paul-hermann.jpg">
-                        <figcaption class="card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">Fort de Pomègues</h3>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="card">
-                        <img alt="Image de la chambre d'hôtel montrant un lit"
-                             src="images/activites/kilyan-sockalingum.jpg">
-                        <figcaption class="card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">Parc national des Calanques</h3>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="card">
-                        <img alt="Image de la chambre d'hôtel montrant un lit"
-                             src="images/activites/florian-wehde.jpg">
-                        <figcaption class="card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-        </section>
-
     </main>
+
+    <section class="activites" id="activites">
+        <div class="activites-title">
+            <h2 class="title">Activités à Marseille</h2>
+            <!--                    <i aria-hidden="true" class="fa-solid fa-chart-line"></i>-->
+        </div>
+        <div class="activites-cards">
+            <a href="#">
+                <figure class="card">
+                    <img alt="Image du Vieux Port"
+                         src="images/activites/reno-laithienne.jpg">
+                    <figcaption class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Vieux port</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="card">
+                    <img alt="Image du Fort de Pomègues"
+                         src="images/activites/paul-hermann.jpg">
+                    <figcaption class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Fort de Pomègues</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="card">
+                    <img alt="Image du Parcnationale des Calanques"
+                         src="images/activites/kilyan-sockalingum.jpg">
+                    <figcaption class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Parc national des Calanques</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure class="card">
+                    <img alt="Image de la chambre d'hôtel montrant un lit"
+                         src="images/activites/florian-wehde.jpg">
+                    <figcaption class="card-content">
+                        <div class="card-txt">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    </section>
+
     <footer>
         <nav>
             <div>
@@ -365,6 +367,7 @@
             </div>
         </nav>
     </footer>
+
 </div>
 </body>
 
