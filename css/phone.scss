@@ -118,11 +118,16 @@
       display: inline-block;
     }
   }
+  #hebergements-and-populaires{
+    flex-direction: column;
+    gap: 30px;
+  }
   .activites-cards,
   .populaires-cards,
   .hebergements-cards {
     a {
-      width: 46%;
+      //width: 46%;
+      width: 100%;
     }
     column-gap: 0;
   }
@@ -143,7 +148,6 @@
     }
   }
   .activites-cards {
-    //flex-direction: column;
     row-gap: 30px;
 
     a {

@@ -91,7 +91,23 @@ h3 {
     font-size: 18px;
   }
 }
+[class*="col-"]{
+  [class$="4"]{
+    width: calc(100%/12*4);
+  }
 
+  [class$="8"] {
+    width: calc(100% / 12 * 8);
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 30px;
+  }
+
+  [class$="12"] {
+    width: 100%;
+  }
+
+}
 .euro {
   font-weight: 700;
 }
@@ -296,7 +312,7 @@ figure {
   }
 }
 
-.hebergements-and-populaires {
+#hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
 
@@ -460,5 +476,6 @@ footer {
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
+
 @import "tablet";
 @import "phone";
