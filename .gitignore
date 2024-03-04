@@ -18,3 +18,4 @@ P2/setup-development-environment
 P2/The-Artbox/old
 .sass-cache/
 new
+*.css.map
