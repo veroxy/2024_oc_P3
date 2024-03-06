@@ -116,7 +116,7 @@ footer {
     gap: 5px;
     font-weight: 700;
     font-size: 17px; }
-    .filter .filter-pill:hover {
+    .filter .filter-pill:hover, .filter .filter-pill:active, .filter .filter-pill:focus {
       background-color: var(--filter-bg-color); }
   .filter i {
     margin-right: 4px; }

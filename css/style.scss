@@ -154,7 +154,9 @@ footer {
     font-weight: 700;
     font-size: 17px;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus{
       background-color: var(--filter-bg-color);
     }
   }
