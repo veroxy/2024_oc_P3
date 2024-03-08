@@ -52,7 +52,7 @@ h3 {
   font-size: 18px;
 }
 
-.title {
+.bloc-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -319,20 +319,21 @@ footer {
 
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+#hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
-  box-sizing: border-box;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: var(--main-bg-color);
+#hebergements-and-populaires {
+  .section-grey {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--main-bg-color);
+  }
 }
-
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
   width: 65%;
 }
 
@@ -364,7 +365,7 @@ footer {
 }
 
 /****** Populaires ***********/
-.populaires {
+#populaires {
   width: 32%;
 }
 
@@ -467,7 +468,3 @@ footer {
   }
 
 }
-
-/*
-@import "tablet";
-@import "phone";*/

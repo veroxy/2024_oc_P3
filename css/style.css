@@ -40,12 +40,12 @@ h2 {
 h3 {
   font-size: 18px; }
 
-.title {
+.bloc-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0; }
-  .title strong {
+  .bloc-title strong {
     font-size: 18px; }
 
 figure {
@@ -223,18 +223,18 @@ footer {
     line-height: 1.2em; }
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+#hebergements-and-populaires {
   display: flex;
   justify-content: space-between; }
 
-.hebergements-and-populaires section {
+#hebergements-and-populaires .section-grey {
   box-sizing: border-box;
   padding: 30px;
   border-radius: 20px;
   background-color: var(--main-bg-color); }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
   width: 65%; }
 
 .hebergements-cards,
@@ -255,7 +255,7 @@ footer {
   padding-bottom: 15px; }
 
 /****** Populaires ***********/
-.populaires {
+#populaires {
   width: 32%; }
 
 .populaires-title {
