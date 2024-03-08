@@ -90,6 +90,7 @@ footer {
 
 /****** header navigation menu ***********/
 #main-nav {
+  // selectionner récursivement les enfants du bloc nav
   * {
     display: flex;
   }
@@ -140,7 +141,6 @@ footer {
 }
 
 .filter {
-  //margin-left: 5px;
   display: flex;
 
   .filter-pill {
@@ -225,8 +225,7 @@ footer {
     cursor: pointer;
     color: white;
     border: none;
-    //border: 1px solid #F2F2F2;
-    border-left: none; /* Prevent double borders */
+    border-left: none;
     border-radius: 0 10px 10px 0;
     background-color: var(--main-color);
     font-size: 17px;
@@ -243,7 +242,6 @@ footer {
 }
 
 /*** filters **/
-
 .filter-bar {
   display: flex;
 
@@ -308,7 +306,7 @@ footer {
   .card-content {
     padding: 0 15px;
 
-    > * {
+    :nth-child(1n) {
       padding-bottom: 8px;
     }
   }
@@ -351,7 +349,7 @@ footer {
 
   a {
     display: flex;
-    width: 30%;
+    width: 29%;
   }
 
   img {
@@ -459,15 +457,17 @@ footer {
   nav {
     display: flex;
     row-gap: 15px;
-
-    > div {
-      display: flex;
-      flex-direction: column;
-      width: 33%;
-      gap: 15px;
-    }
   }
+
+  .bloc-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 15px;
+  }
+
 }
 
+/*
 @import "tablet";
-@import "phone";
+@import "phone";*/
