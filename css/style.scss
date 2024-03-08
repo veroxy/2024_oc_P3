@@ -1,33 +1,33 @@
 /****** General ***********/
 
 * {
-  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 :root {
-  --main-color: #0065FC;
-  --main-bg-color: #F2F2F2;
-  --second-color: #37ADFF;
-  --filter-bg-color: #DEEBFF;
-  --lighter-color: #D9D9D9;
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --second-color: #37adff;
+  --filter-bg-color: #deebff;
+  --lighter-color: #d9d9d9;
 }
 
 
 body {
-  margin: 0;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -53,18 +53,19 @@ h3 {
 }
 
 .title {
-  margin: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  margin: 0;
 
   strong {
     font-size: 18px;
   }
 }
+
 figure {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 header,
@@ -75,10 +76,10 @@ footer {
 
 /*** MAXIMUM **/
 .main-container {
+  box-sizing: border-box;
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
-  box-sizing: border-box;
 }
 
 
@@ -98,8 +99,8 @@ footer {
   justify-content: space-between;
 
   ul {
-    min-width: 20%;
     justify-content: space-around;
+    min-width: 20%;
   }
 }
 
@@ -109,27 +110,25 @@ footer {
 }
 
 .nav-link {
-  gap: 68PX;
   padding: 10px;
   padding-top: 12px;
+  gap: 68PX;
 
   &:hover,
   &:focus,
   &:active {
-    border-top: solid 2px var(--main-color);
     padding-top: 10px;
     color: var(--main-color);
+    border-top: solid 2px var(--main-color);
   }
 }
 
-
 /****** Info - filter - search bar ***********/
-
 #info-group {
   display: flex;
   flex-direction: column;
-  row-gap: 35px;
   padding: 35px 0;
+  row-gap: 35px;
 }
 
 .filter-bar {
@@ -146,17 +145,17 @@ footer {
 
   .filter-pill {
     display: flex;
+    height: 50px;
     padding: 15px 15px;
     border: solid 2px var(--lighter-color);
     border-radius: 25px;
-    height: 50px;
-    gap: 5px;
-    font-weight: 700;
     font-size: 17px;
+    font-weight: 700;
+    gap: 5px;
 
     &:hover,
     &:active,
-    &:focus{
+    &:focus {
       background-color: var(--filter-bg-color);
     }
   }
@@ -174,13 +173,13 @@ footer {
   }
 
   i {
-    border: solid 1px var(--lighter-color);
-    height: 24px;
     width: 24px;
-    padding: 4px;
-    border-radius: 50%;
-    text-align: center;
+    height: 24px;
     margin-right: 4px;
+    padding: 4px;
+    text-align: center;
+    border: solid 1px var(--lighter-color);
+    border-radius: 50%;
   }
 }
 
@@ -191,16 +190,16 @@ footer {
 
   form {
     display: flex;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #f2f2f2;
     border-radius: 10px;
   }
 
   input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: none;
     width: 80%;
-    background: #fff;
+    padding: 10px;
+    border: none;
+    background: #ffffff;
+    font-size: 17px;
     font-weight: 700;
 
     &:focus {
@@ -210,10 +209,10 @@ footer {
 
   .label-search {
     display: flex;
+    align-items: center;
     width: 50px;
     border-radius: 10px 0 0 10px;
     background-color: var(--lighter-color);
-    align-items: center;
 
     i {
       margin: 0 auto;
@@ -223,18 +222,18 @@ footer {
 
   button {
     padding: 10px;
-    background-color: var(--main-color);
-    color: white;
-    font-size: 17px;
-    //border: 1px solid #F2F2F2;
-    border: none;
-    border-radius: 0 10px 10px 0;
-    border-left: none; /* Prevent double borders */
     cursor: pointer;
+    color: white;
+    border: none;
+    //border: 1px solid #F2F2F2;
+    border-left: none; /* Prevent double borders */
+    border-radius: 0 10px 10px 0;
+    background-color: var(--main-color);
+    font-size: 17px;
 
     &:after {
-      content: "rechercher...";
       display: flex;
+      content: "rechercher...";
     }
 
     &:hover {
@@ -260,14 +259,14 @@ footer {
 
 /*** card figure **/
 .card {
-  background-color: white;
   border-radius: 20px;
+  background-color: white;
   //padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
   img {
-    object-fit: cover;
     width: 100%;
+    object-fit: cover;
 
   }
 }
@@ -287,13 +286,13 @@ footer {
 /*** card **/
 .card {
   width: 100%;
-  background-color: white;
   border-radius: 20px;
+  background-color: white;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
   .illustration {
-    height: 124px;
     overflow: hidden;
+    height: 124px;
 
     img {
       height: 100%;
@@ -302,8 +301,8 @@ footer {
   }
 
   img {
+    border: 5px solid #ffffff;
     object-fit: cover;
-    border: 5px solid #fff;
   }
 
   .card-content {
@@ -328,10 +327,10 @@ footer {
 }
 
 .hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
-  border-radius: 20px;
-  padding: 30px;
   box-sizing: border-box;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--main-bg-color);
 }
 
 /****** Hebergements ***********/
@@ -341,10 +340,10 @@ footer {
 
 .hebergements-cards,
 .activites-cards {
-  padding: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 30px 0;
   gap: 30px;
 }
 
@@ -361,8 +360,8 @@ footer {
   }
 
   .card {
-    padding-bottom: 15px;
     width: 100%;
+    padding-bottom: 15px;
   }
 }
 
@@ -373,8 +372,8 @@ footer {
 
 .populaires-title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 
@@ -392,12 +391,12 @@ footer {
   }
 
   .card-content {
-    width: 67%;
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    width: 67%;
+    padding-left: 15px;
   }
 
   .card-title {
@@ -414,16 +413,17 @@ footer {
   }
 
 }
+
 .activites {
   padding: 30px;
 }
 
 .activites-cards {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: calc(7% / 3);
+  justify-content: space-between;
   padding: 30px 0;
+  column-gap: calc(7% / 3);
 
   a {
     display: flex;
@@ -435,9 +435,9 @@ footer {
   }
 
   img {
-    border-radius: 20px 20px 0 0;
-    border: none;
     height: 380px;
+    border: none;
+    border-radius: 20px 20px 0 0;
 
   }
 
@@ -447,8 +447,8 @@ footer {
 }
 
 footer {
-  background-color: var(--main-bg-color);
   padding: 30px;
+  background-color: var(--main-bg-color);
 
   ul {
     display: flex;
@@ -461,14 +461,13 @@ footer {
     row-gap: 15px;
 
     > div {
-      width: 33%;
       display: flex;
       flex-direction: column;
+      width: 33%;
       gap: 15px;
     }
   }
 }
-
 
 @import "tablet";
 @import "phone";
