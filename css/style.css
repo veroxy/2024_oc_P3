@@ -49,6 +49,13 @@ h3 {
   font-size: 18px;
 }
 
+/**
+todo change name
+.more,
+.filter
+ */
+.more,
+.filters,
 .bloc-title {
   display: flex;
   align-items: center;
@@ -56,6 +63,8 @@ h3 {
   margin: 0;
 }
 
+.more strong,
+.filters strong,
 .bloc-title strong {
   font-size: 18px;
 }
@@ -85,15 +94,13 @@ footer {
 }
 
 /****** header navigation menu ***********/
-#main-nav * {
-  display: flex;
-}
-
 .menu {
+  display: flex;
   justify-content: space-between;
 }
 
 .menu ul {
+  display: flex;
   justify-content: space-around;
   min-width: 20%;
 }
@@ -109,9 +116,7 @@ footer {
   gap: 68PX;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
+.nav-link:hover, .nav-link:focus, .nav-link:active {
   padding-top: 10px;
   color: var(--main-color);
   border-top: solid 2px var(--main-color);
@@ -130,6 +135,7 @@ footer {
 }
 
 .filters-container {
+  display: flex;
   gap: 15px;
 }
 
@@ -148,9 +154,7 @@ footer {
   gap: 5px;
 }
 
-.filter .filter-pill:hover,
-.filter .filter-pill:active,
-.filter .filter-pill:focus {
+.filter .filter-pill:hover, .filter .filter-pill:active, .filter .filter-pill:focus {
   background-color: var(--filter-bg-color);
 }
 
@@ -234,10 +238,9 @@ footer {
 /*** filters **/
 .filter-bar {
   display: flex;
-}
-
-.filter-bar > * {
-  display: flex;
+  /* > * {
+    display: flex;
+  } */
 }
 
 .filter-bar {
