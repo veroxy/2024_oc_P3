@@ -77,3 +77,29 @@ Ressources :
 
 > Le cours Mettez en place votre environnement front-end en sautant les parties sur Git.
 La documentation officielle pour utiliser Font Awesome.
+
+---
+- la demande était d'intégrer l'interface du site BOOKI avec du code **HTML et CSS**.
+> - à partir d'une maquette [FIGMA]() contenant les différents composants nécessaire à l'intégration dans les écrans et résolutions uniquement de **1025px et plus** avec un container central de **maximum 1440px de large** 
+
+
+- Comment as-tu analysé la maquette et comment est-ce que cela a influencé ton travail ?
+> - Je suis allée comparer les composants à créer et ceux déjà présant dans le css fournit et la strutures du HTML
+> - pris le paramètre général qui était que la taille maximal de container principal ne devait pas dépasser 1440px.
+> - j'ai ajouter des style pour faire en sorte que certaines propriétées soit générique 
+
+
+- Pourquoi passer au validateur ? Quels en sont les publics et les bénéfices ?
+> un validateur comme le W3C permet de définir les standards techniques liés au web. Surtout, ils déterminent les mêmes règles pour tous les développeurs du monde.
+
+- Pourquoi adhérer aux standards ?
+> cela permet de homogénéiser son code et d'être compris de tous: ainsi d'avoir un code maintenanble par tous
+
+- spécificité en CSS
+> importance donnée à une déclaration CSS 
+> - selon l'ordre dans laquelle elle est écrite dans le css 
+> - le type de selecteur 
+>   - tag
+>   - .class
+>   - #id
+>   - exception **!important**

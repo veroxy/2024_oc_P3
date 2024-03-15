@@ -52,12 +52,6 @@ h3 {
   font-size: 18px;
 }
 
-/**
-todo change name
-.more,
-.filter
- */
-
 .more,
 .filters,
 .bloc-title {
@@ -84,7 +78,6 @@ footer {
 
 /*** MAXIMUM **/
 .main-container {
-  box-sizing: border-box;
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
@@ -259,34 +252,11 @@ footer {
   align-items: center;
 }
 
+
 /*** card figure **/
 .card {
-  border-radius: 20px;
-  background-color: white;
-  //padding: 5px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
-  img {
-	width: 100%;
-	object-fit: cover;
-
-  }
-}
-
-.card-title {
-  font-size: 16px;
-}
-
-.euro {
-  font-weight: 700;
-}
-
-.neutral-star {
-  color: var(--main-bg-color)
-}
-
-/*** card **/
-.card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   border-radius: 20px;
   background-color: white;
@@ -303,15 +273,23 @@ footer {
   }
 
   img {
+	width: 100%;
 	border: 5px solid #ffffff;
 	object-fit: cover;
   }
 
   .card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 0 15px;
 
-	:nth-child(1n) {
-	  padding-bottom: 8px;
+	&:nth-child(1n) {
+	  flex-grow: 1;
+	}
+
+	.card-subtitle {
+	  padding: 8px 0;
 	}
   }
 
@@ -319,8 +297,19 @@ footer {
 	font-size: 16px;
 	line-height: 1.2em;
   }
-}
 
+  .card-subtitle {
+	font-size: 14px;
+  }
+
+  .euro {
+	font-weight: 700;
+  }
+
+  .neutral-star {
+	color: var(--main-bg-color)
+  }
+}
 
 /****** Hebergements And Populaires ***********/
 #hebergements-and-populaires {
@@ -330,7 +319,6 @@ footer {
 
 #hebergements-and-populaires {
   .section-grey {
-	box-sizing: border-box;
 	padding: 30px;
 	border-radius: 20px;
 	background-color: var(--main-bg-color);
@@ -367,6 +355,7 @@ footer {
   .card {
 	width: 100%;
 	padding-bottom: 15px;
+
   }
 }
 
@@ -384,22 +373,22 @@ footer {
 
 .populaires-cards {
   .card {
-	display: flex;
+	flex-direction: row;
+	height: 146px;
 	margin-top: 33px;
   }
 
-  img {
+  .illustration {
 	width: 33%;
-	height: 136px;
+	height: inherit;
+  }
+
+  img {
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
   }
 
   .card-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	box-sizing: border-box;
 	width: 67%;
 	padding-left: 15px;
   }
@@ -472,5 +461,4 @@ footer {
 	width: 33%;
 	gap: 15px;
   }
-
 }
